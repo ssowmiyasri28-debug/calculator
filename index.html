@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scientific Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculator">
+    <input type="text" id="display" disabled placeholder="0">
+    <div class="buttons">
+      <!-- Memory Buttons -->
+      <button data-action="mc">MC</button>
+      <button data-action="mr">MR</button>
+      <button data-action="mplus">M+</button>
+      <button data-action="mminus">M-</button>
+
+      <!-- Clear & Delete -->
+      <button data-action="clear">C</button>
+      <button data-action="delete">DEL</button>
+      <button data-value="/">/</button>
+      <button data-value="*">*</button>
+
+      <!-- Numbers & Operators -->
+      <button data-value="7">7</button>
+      <button data-value="8">8</button>
+      <button data-value="9">9</button>
+      <button data-value="-">-</button>
+
+      <button data-value="4">4</button>
+      <button data-value="5">5</button>
+      <button data-value="6">6</button>
+      <button data-value="+">+</button>
+
+      <button data-value="1">1</button>
+      <button data-value="2">2</button>
+      <button data-value="3">3</button>
+      <button data-action="calculate" class="equal">=</button>
+
+      <button data-value="0" class="zero">0</button>
+      <button data-value=".">.</button>
+
+      <!-- Advanced functions -->
+      <button data-action="sqrt">√</button>
+      <button data-action="square">x²</button>
+      <button data-action="cube">x³</button>
+      <button data-action="inverse">1/x</button>
+      <button data-action="negate">±</button>
+      <button data-action="percent">%</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
